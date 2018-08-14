@@ -6,6 +6,7 @@ using Docker as a virtualization provider.
 
 ### Quick Start
 
+    docker pull bennyhahmeen/pyawsdev
     cd <this-directory>
     vagrant up
 
