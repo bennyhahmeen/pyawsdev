@@ -28,6 +28,16 @@ the container to create AWS Lambda dependencies.
 contains setup scripts to bootstrap a development environment with the
 tools necessary to use this.
 
+### Building for Local Updates
+
+Edit Vagrantfile to comment out d.image and uncomment d.build_dir like so:
+
+    # d.image = "bennyhahmeen/pyawsdev"
+    d.build_dir = "."
+
+Then run ```vagrant up``` as usual and it will build the docker image
+locally rather than pulling it from Docker Hub.
+
 ### Manually running Docker directly
 
     docker pull bennyhahmeen/pyawsdev
