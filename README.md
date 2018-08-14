@@ -4,6 +4,14 @@
 This is a Vagrant development environment for Python AWS development
 using Docker as a virtualization provider.
 
+This is based on the official Python Docker image, which is Debian-based.
+It adds a few utilities to support using it as a Vagrant development
+environment along with the following development utilities:
+
+    awscli
+    docker
+    pipenv
+
 ### Quick Start
 
     docker pull bennyhahmeen/pyawsdev
